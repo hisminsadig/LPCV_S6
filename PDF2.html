@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="es">
+  <head>
+
+
+
+    <!-- CONFIGURACIÓN DE IDIOMA, CARACTERES, PANTALLA Y ESTILOS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Práctica HTML5 y JavaScript | Tarea 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+
+    <!-- ENCABEZADO INSTITUCIONAL Y ENLACE PARA VOLVER AL INICIO -->
+    <header class="topline">
+      <a class="identity" href="index.html" aria-label="Volver al inicio">
+        <img src="imagenes/INSIGNIA_UPRIT.png" alt="Insignia UPRIT" />
+        <span class="identity__name">
+          Universidad Privada
+          <br />
+          de Trujillo
+        </span>
+      </a>
+    </header>
+
+
+
+    <!-- CONTENIDO PRINCIPAL: EJERCICIOS Y RESOLUCIONES DE LA TAREA -->
+    <main>
+      <a class="back-link" href="index.html">Inicio</a>
+      <h1>Práctica de HTML5 y JavaScript</h1>
+      <p class="page-intro">Tarea 2 · Enunciados y resoluciones interactivas</p>
+
+
+
+      <!-- LISTA DE EJERCICIOS EXPLICATIVOS E INTERACTIVOS -->
+      <div class="exercise-list">
+        <h2 id="solved-heading" class="exercise-section-title">Ejercicios resueltos</h2>
+
+
+
+        <!-- EJERCICIO RESUELTO 1: SUMA DE DOS NÚMEROS -->
+        <details class="exercise" open>
+          <summary><h2>Ejercicio resuelto 1 · Suma de dos números</h2></summary>
+          <div class="exercise__body">
+            <p>Ingresar dos números, calcular su suma y mostrar el resultado.</p>
+            <form onsubmit="return sumaResuelta(event);">
+              <label>
+                Primer número
+                <input id="sumaA" type="number" step="any" required />
+              </label>
+              <label>
+                Segundo número
+                <input id="sumaB" type="number" step="any" required />
+              </label>
+              <button>Sumar</button>
+              <output id="rSumaResuelta"></output>
+            </form>
+          </div>
+        </details>
+
+
+
+        <!-- EJERCICIO RESUELTO 2: PAR O IMPAR -->
+        <details class="exercise">
+          <summary><h2>Ejercicio resuelto 2 · Par o impar</h2></summary>
+          <div class="exercise__body">
+            <p>Ingresar un número y determinar si es par o impar.</p>
+            <form onsubmit="return paridadResuelta(event);">
+              <label>
+                Número
+                <input id="numeroParidad" type="number" step="1" required />
+              </label>
+              <button>Comprobar</button>
+              <output id="rParidadResuelta"></output>
+            </form>
+          </div>
+        </details>
+
+
+
+        <!-- EJERCICIO RESUELTO 3: MAYOR DE DOS NÚMEROS -->
+        <details class="exercise">
+          <summary><h2>Ejercicio resuelto 3 · Mayor de dos números</h2></summary>
+          <div class="exercise__body">
+            <p>Ingresar dos números e indicar cuál es mayor o si son iguales.</p>
+            <form onsubmit="return mayorResuelto(event);">
+              <label>
+                Primer número
+                <input id="mayorA" type="number" step="any" required />
+              </label>
+              <label>
+                Segundo número
+                <input id="mayorB" type="number" step="any" required />
+              </label>
+              <button>Comparar</button>
+              <output id="rMayorResuelto"></output>
+            </form>
+          </div>
+        </details>
+
+
+
+        <!-- EJERCICIO RESUELTO 4: CALCULAR EDAD -->
+        <details class="exercise">
+          <summary><h2>Ejercicio resuelto 4 · Calcular edad</h2></summary>
+          <div class="exercise__body">
+            <p>Ingresar el año de nacimiento y calcular la edad aproximada.</p>
+            <form onsubmit="return edadResuelta(event);">
+              <label>
+                Año de nacimiento
+                <input id="anioNacimiento" type="number" min="1" required />
+              </label>
+              <button>Calcular edad</button>
+              <output id="rEdadResuelta"></output>
+            </form>
+          </div>
+        </details>
+
+
+
+        <!-- EJERCICIO RESUELTO 5: NOTA APROBATORIA -->
+        <details class="exercise">
+          <summary><h2>Ejercicio resuelto 5 · Nota aprobatoria</h2></summary>
+          <div class="exercise__body">
+            <p>Ingresar una nota e indicar si está aprobada (11 o más) o desaprobada.</p>
+            <form onsubmit="return notaResuelta(event);">
+              <label>
+                Nota
+                <input id="notaResuelta" type="number" step="any" required />
+              </label>
+              <button>Evaluar</button>
+              <output id="rNotaResuelta"></output>
+            </form>
+          </div>
+        </details>
+
+        <h2 id="proposed-heading" class="exercise-section-title">Ejercicios propuestos (1 al 9)</h2>
+
+
+
+        <!-- FORMULARIO DE VALIDACIÓN DE USUARIO Y CONTRASEÑA -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 6 · Inicio de sesión</h2></summary>
+          <div class="exercise__body">
+            <p>Solicitar usuario y contraseña; informar si las credenciales coinciden.</p>
+            <form onsubmit="return login(event);">
+              <label>
+                Usuario
+                <input id="usuario" required />
+              </label>
+              <label>
+                Contraseña
+                <input id="clave" type="password" required />
+              </label>
+              <button>Iniciar sesión</button>
+              <output id="rlogin"></output>
+            </form>
+            <p>Resolución: comparar los dos campos con los valores registrados mediante una condición.</p>
+          </div>
+        </details>
+
+
+
+        <!-- CÁLCULO DEL DESCUENTO O RECARGO SEGÚN LA FORMA DE PAGO -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 7 · Compra en farmacia</h2></summary>
+          <div class="exercise__body">
+            <p>Al contado se descuenta 5%; con tarjeta se agrega 3%. Mostrar el ajuste y total.</p>
+            <form onsubmit="return farmacia(event);">
+              <label>
+                Valor de compra
+                <input id="compra" type="number" min="0" step="0.01" required />
+              </label>
+              <label>
+                Forma de pago
+                <select id="pago">
+                  <option>Contado</option>
+                  <option>Tarjeta</option>
+                </select>
+              </label>
+              <button>Calcular</button>
+              <output id="rfarmacia"></output>
+            </form>
+            <p>Resolución: contado = compra × 0.95; tarjeta = compra × 1.03.</p>
+          </div>
+        </details>
+
+
+
+        <!-- CLASIFICACIÓN DE PUNTAJE SEGÚN LOS RESULTADOS DE TRES DADOS -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 8 · Puntaje de tres dados</h2></summary>
+          <div class="exercise__body">
+            <p>Clasificar: tres seises, Excelente; dos, Muy bien; uno, Regular; ninguno, Pésimo.</p>
+            <form onsubmit="return dados(event);">
+              <label>
+                Dado 1
+                <input id="d1" type="number" min="1" max="6" required />
+              </label>
+              <label>
+                Dado 2
+                <input id="d2" type="number" min="1" max="6" required />
+              </label>
+              <label>
+                Dado 3
+                <input id="d3" type="number" min="1" max="6" required />
+              </label>
+              <button>Evaluar</button>
+              <output id="rdados"></output>
+            </form>
+            <p>Resolución: contar cuántos valores son iguales a seis y seleccionar el mensaje según el conteo.</p>
+          </div>
+        </details>
+
+
+
+        <!-- CLASIFICACIÓN DEL CLIMA SEGÚN LA TEMPERATURA INGRESADA -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 9 · Tipo de clima</h2></summary>
+          <div class="exercise__body">
+            <p>Clasificar la temperatura: ≤10 Frío; >10 y ≤20 Nublado; >20 y ≤30 Caluroso; >30 Tropical.</p>
+            <form onsubmit="return clima(event);">
+              <label>
+                Temperatura en °C
+                <input id="temp" type="number" step="0.1" required />
+              </label>
+              <button>Clasificar</button>
+              <output id="rclima"></output>
+            </form>
+            <p>Resolución: evaluar los rangos en orden, desde el límite inferior al superior.</p>
+          </div>
+        </details>
+
+
+
+        <!-- COMPRUEBA SI LA EDAD ESTÁ ENTRE 13 Y 17 AÑOS -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 1 · Adolescencia (13 a 17 años)</h2></summary>
+          <div class="exercise__body">
+            <form onsubmit="return edadGrupo(event);">
+              <label>
+                Edad
+                <input id="edadG" type="number" min="0" required />
+              </label>
+              <button>Evaluar</button>
+              <output id="redadG"></output>
+            </form>
+            <p>Condición: edad ≥ 13 y edad ≤ 17.</p>
+          </div>
+        </details>
+
+
+
+        <!-- ASIGNA UNA CATEGORÍA SEGÚN EL RANGO DE LA NOTA -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 2 · Rango de calificación</h2></summary>
+          <div class="exercise__body">
+            <form onsubmit="return calif(event);">
+              <label>
+                Nota de 0 a 20
+                <input id="notaG" type="number" min="0" max="20" step="0.1" required />
+              </label>
+              <button>Evaluar</button>
+              <output id="rnotaG"></output>
+            </form>
+          </div>
+        </details>
+
+
+
+        <!-- CONVIERTE EL NÚMERO INGRESADO EN EL NOMBRE DEL MES -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 3 · Nombre del mes (switch)</h2></summary>
+          <div class="exercise__body">
+            <form onsubmit="return mes(event);">
+              <label>
+                Número del 1 al 12
+                <input id="mesN" type="number" min="1" max="12" required />
+              </label>
+              <button>Mostrar mes</button>
+              <output id="rmes"></output>
+            </form>
+          </div>
+        </details>
+
+
+
+        <!-- REALIZA UNA OPERACIÓN ARITMÉTICA ENTRE DOS NÚMEROS -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 4 · Calculadora</h2></summary>
+          <div class="exercise__body">
+            <form onsubmit="return calc(event);">
+              <label>
+                Primer número
+                <input id="ca" type="number" step="any" required />
+              </label>
+              <label>
+                Operador
+                <select id="op">
+                  <option>+</option>
+                  <option>-</option>
+                  <option>*</option>
+                  <option>/</option>
+                </select>
+              </label>
+              <label>
+                Segundo número
+                <input id="cb" type="number" step="any" required />
+              </label>
+              <button>Calcular</button>
+              <output id="rcalc"></output>
+            </form>
+          </div>
+        </details>
+
+
+
+        <!-- DETERMINA SI EL AÑO INGRESADO ES BISIESTO -->
+        <details class="exercise">
+          <summary><h2>Ejercicio propuesto 5 · Año bisiesto</h2></summary>
+          <div class="exercise__body">
+            <form onsubmit="return bisiesto(event);">
+              <label>
+                Año
+                <input id="anio" type="number" min="1" required />
+              </label>
+              <button>Comprobar</button>
+              <output id="rbis"></output>
+            </form>
+            <p>Es bisiesto si es divisible entre 400, o si es divisible entre 4 pero no entre 100.</p>
+          </div>
+        </details>
+      </div>
+    </main>
+
+
+
+    <!-- PIE DE PÁGINA INSTITUCIONAL -->
+    <footer>Derechos Reservados ITeMH @ Universidad Privada de Trujillo</footer>
+
+
+
+    <!-- COMIENZA SCRIPT -->
+    <script>
+      // ORGANIZA CADA EJERCICIO Y AGREGA LOS TÍTULOS DE ENUNCIADO Y RESOLUCIÓN.
+      document.querySelectorAll(".exercise__body").forEach((body) => {
+        const nodes = [...body.children],
+          statement = nodes.find((n) => n.matches("p"));
+        if (!statement) return;
+        const rest = nodes.filter((n) => n !== statement),
+          form = rest.find((n) => n.matches("form")),
+          explanation = rest.filter((n) => n.matches("p"));
+        const en = document.createElement("p");
+        en.className = "section-label";
+        en.innerHTML = "<strong>Enunciado</strong>";
+        const re = document.createElement("p");
+        re.className = "section-label";
+        re.innerHTML = "<strong>Resolución</strong>";
+        body.replaceChildren(en, statement);
+        if (explanation.length) body.append(re, ...explanation);
+        else body.append(re);
+        if (form) body.append(form);
+        rest.filter((n) => !n.matches("p,form")).forEach((n) => body.append(n));
+      });
+
+      // ORDENA LOS EJERCICIOS BAJO TÍTULOS H2, SIN ACORDEONES CONTENEDORES.
+      const exerciseList = document.querySelector(".exercise-list");
+      const exerciseCards = [...exerciseList.querySelectorAll("details.exercise")];
+      const solvedExercises = exerciseCards.filter((item) =>
+        item.querySelector("summary h2").textContent.startsWith("Ejercicio resuelto"),
+      );
+      const proposedExercises = exerciseCards.filter((item) =>
+        item.querySelector("summary h2").textContent.startsWith("Ejercicio propuesto"),
+      );
+      const proposedOrder = [
+        "Ejercicio propuesto 1 · Adolescencia",
+        "Ejercicio propuesto 2 · Rango de calificación",
+        "Ejercicio propuesto 3 · Nombre del mes",
+        "Ejercicio propuesto 4 · Calculadora",
+        "Ejercicio propuesto 5 · Año bisiesto",
+        "Ejercicio propuesto 6 · Inicio de sesión",
+        "Ejercicio propuesto 7 · Compra en farmacia",
+        "Ejercicio propuesto 8 · Puntaje de tres dados",
+        "Ejercicio propuesto 9 · Tipo de clima",
+      ];
+      const orderedProposedExercises = proposedOrder.map((title) => {
+        const exercise = proposedExercises.find((item) =>
+          item.querySelector("summary h2").textContent.startsWith(title),
+        );
+        return exercise;
+      });
+
+      // CREA TÍTULOS H2 Y DEJA CADA ACORDEÓN DE EJERCICIO INDEPENDIENTE.
+      const solvedHeading = document.getElementById("solved-heading");
+      const proposedHeading = document.getElementById("proposed-heading");
+      exerciseList.replaceChildren(
+        solvedHeading,
+        ...solvedExercises,
+        proposedHeading,
+        ...orderedProposedExercises.filter(Boolean),
+      );
+
+      // FUNCIONES AUXILIARES PARA LEER CAMPOS Y LOCALIZAR RESULTADOS.
+      const v = (id) => document.getElementById(id).value,
+        out = (id) => document.getElementById(id);
+
+      // SUMA LOS DOS NÚMEROS INGRESADOS.
+      function sumaResuelta(e) {
+        e.preventDefault();
+        out("rSumaResuelta").textContent = "Resultado: " + (Number(v("sumaA")) + Number(v("sumaB")));
+        return false;
+      }
+
+      // IDENTIFICA SI EL NÚMERO INGRESADO ES PAR O IMPAR.
+      function paridadResuelta(e) {
+        e.preventDefault();
+        out("rParidadResuelta").textContent =
+          Number(v("numeroParidad")) % 2 === 0 ? "El número es par" : "El número es impar";
+        return false;
+      }
+
+      // COMPARA LOS DOS NÚMEROS Y CONTEMPLA EL CASO DE IGUALDAD.
+      function mayorResuelto(e) {
+        e.preventDefault();
+        const a = Number(v("mayorA"));
+        const b = Number(v("mayorB"));
+        out("rMayorResuelto").textContent = a === b ? "Los números son iguales" : `El mayor es ${Math.max(a, b)}`;
+        return false;
+      }
+
+      // CALCULA LA EDAD APROXIMADA CON EL AÑO ACTUAL.
+      function edadResuelta(e) {
+        e.preventDefault();
+        const birthYear = Number(v("anioNacimiento"));
+        out("rEdadResuelta").textContent =
+          birthYear > new Date().getFullYear()
+            ? "El año de nacimiento no puede ser futuro"
+            : `Edad aproximada: ${new Date().getFullYear() - birthYear} años`;
+        return false;
+      }
+
+      // INDICA SI LA NOTA INGRESADA ES APROBATORIA.
+      function notaResuelta(e) {
+        e.preventDefault();
+        const grade = Number(v("notaResuelta"));
+        out("rNotaResuelta").textContent = grade >= 11 ? "Aprobado" : "Desaprobado";
+        return false;
+      }
+
+      // COMPRUEBA LAS CREDENCIALES INGRESADAS EN EL FORMULARIO.
+      function login(e) {
+        e.preventDefault();
+        out("rlogin").textContent =
+          v("usuario") === "admin" && v("clave") === "1234"
+            ? "Inicio de sesión correcto"
+            : "Nombre de usuario o contraseña incorrectos";
+        return false;
+      }
+
+      // CALCULA EL DESCUENTO O RECARGO Y EL TOTAL DE LA COMPRA.
+      function farmacia(e) {
+        e.preventDefault();
+        let n = Number(v("compra")),
+          card = v("pago") === "Tarjeta",
+          aj = n * (card ? 0.03 : -0.05);
+        out("rfarmacia").textContent =
+          `${card ? "Recargo" : "Descuento"}: S/ ${Math.abs(aj).toFixed(2)} · Total: S/ ${(n + aj).toFixed(2)}`;
+        return false;
+      }
+
+      // CUENTA LOS SEISES Y MUESTRA EL PUNTAJE CORRESPONDIENTE.
+      function dados(e) {
+        e.preventDefault();
+        let n = ["d1", "d2", "d3"].filter((id) => Number(v(id)) === 6).length;
+        out("rdados").textContent = ["Pésimo", "Regular", "Muy bien", "Excelente"][n];
+        return false;
+      }
+
+      // CLASIFICA LA TEMPERATURA EN UNA CATEGORÍA DE CLIMA.
+      function clima(e) {
+        e.preventDefault();
+        let t = Number(v("temp"));
+        out("rclima").textContent = t <= 10 ? "Frío" : t <= 20 ? "Nublado" : t <= 30 ? "Caluroso" : "Tropical";
+        return false;
+      }
+
+      // INDICA SI LA EDAD INGRESADA CORRESPONDE A LA ADOLESCENCIA.
+      function edadGrupo(e) {
+        e.preventDefault();
+        let n = Number(v("edadG"));
+        out("redadG").textContent = n >= 13 && n <= 17 ? "Es adolescente" : "No está en el rango adolescente";
+        return false;
+      }
+
+      // CONVIERTE LA NOTA EN UNA CATEGORÍA DE CALIFICACIÓN.
+      function calif(e) {
+        e.preventDefault();
+        let n = Number(v("notaG"));
+        out("rnotaG").textContent =
+          n < 0 || n > 20
+            ? "Nota fuera de rango"
+            : n < 10
+              ? "Muy bajo"
+              : n < 14
+                ? "Regular"
+                : n < 18
+                  ? "Bueno"
+                  : "Excelente";
+        return false;
+      }
+
+      // BUSCA EL NOMBRE DEL MES ASOCIADO AL NÚMERO INGRESADO (CON SWITCH).
+      function mes(e) {
+        e.preventDefault();
+        let nombre;
+        switch (Number(v("mesN"))) {
+          case 1:
+            nombre = "Enero";
+            break;
+          case 2:
+            nombre = "Febrero";
+            break;
+          case 3:
+            nombre = "Marzo";
+            break;
+          case 4:
+            nombre = "Abril";
+            break;
+          case 5:
+            nombre = "Mayo";
+            break;
+          case 6:
+            nombre = "Junio";
+            break;
+          case 7:
+            nombre = "Julio";
+            break;
+          case 8:
+            nombre = "Agosto";
+            break;
+          case 9:
+            nombre = "Septiembre";
+            break;
+          case 10:
+            nombre = "Octubre";
+            break;
+          case 11:
+            nombre = "Noviembre";
+            break;
+          case 12:
+            nombre = "Diciembre";
+            break;
+          default:
+            nombre = "Número inválido";
+        }
+        out("rmes").textContent = nombre;
+        return false;
+      }
+
+      // REALIZA LA OPERACIÓN SELECCIONADA Y CONTROLA LA DIVISIÓN ENTRE CERO.
+      function calc(e) {
+        e.preventDefault();
+        let a = Number(v("ca")),
+          b = Number(v("cb")),
+          o = v("op");
+        out("rcalc").textContent =
+          o === "/" && b === 0
+            ? "No se puede dividir entre cero"
+            : "Resultado: " + { "+": a + b, "-": a - b, "*": a * b, "/": a / b }[o];
+        return false;
+      }
+
+      // APLICA LAS REGLAS DEL CALENDARIO PARA IDENTIFICAR AÑOS BISIESTOS.
+      function bisiesto(e) {
+        e.preventDefault();
+        let n = Number(v("anio"));
+        out("rbis").textContent = n % 400 === 0 || (n % 4 === 0 && n % 100 !== 0) ? "Año bisiesto" : "Año no bisiesto";
+        return false;
+      }
+    </script>
+
+
+
+    <!-- FINALIZA SCRIPT -->
+  </body>
+</html>

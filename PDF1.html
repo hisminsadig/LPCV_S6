@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="es">
+  <head>
+
+
+
+    <!-- CONFIGURACIÓN DE IDIOMA, CARACTERES, PANTALLA Y ESTILOS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Práctica FOR y WHILE · Tarea 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+
+    <!-- ENCABEZADO INSTITUCIONAL Y ENLACE PARA VOLVER AL INICIO -->
+    <header class="topline">
+      <a class="identity" href="index.html">
+        <img src="imagenes/INSIGNIA_UPRIT.png" alt="Insignia UPRIT" />
+        <span class="identity__name">
+          Universidad Privada
+          <br />
+          de Trujillo
+        </span>
+      </a>
+    </header>
+
+
+
+    <!-- CONTENIDO PRINCIPAL: EJERCICIOS FOR Y WHILE -->
+    <main>
+      <a class="back-link" href="index.html">Inicio</a>
+      <h1>Práctica FOR y WHILE</h1>
+      <p class="page-intro">Tarea 1 · Cada ejercicio incluye enunciado y resolución ejecutable.</p>
+
+
+
+      <!-- LISTA DE EJERCICIOS Y FORMULARIOS INTERACTIVOS -->
+      <div class="exercise-list">
+        <h2 id="solved-heading" class="exercise-section-title">Ejercicios Resueltos FOR con Código</h2>
+        <div id="solved-for-list" class="exercise-list">
+
+
+
+          <!-- EJERCICIO RESUELTO FOR 1: RECORRER DEL 1 AL 10 -->
+          <details class="exercise" open>
+            <summary><h3>Ejercicio resuelto FOR 1 · Mostrar números del 1 al 10</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar en pantalla los números del 1 al 10 usando un ciclo FOR.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>for (let i = 1; i &lt;= 10; i++) {
+                document.write(i + "&lt;br&gt;");
+              }</code></pre>
+              <button type="button" onclick="runSolvedFor1()">Ejecutar código</button>
+              <output id="solvedFor1"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO FOR 2: TABLA DE MULTIPLICAR DEL 5 -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto FOR 2 · Tabla del 5</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar la tabla del 5 del 1 al 10.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>for (let i = 1; i &lt;= 10; i++) {
+                document.write("5 x " + i + " = " + 5 * i + "&lt;br&gt;");
+              }</code></pre>
+              <button type="button" onclick="runSolvedFor2()">Ejecutar código</button>
+              <output id="solvedFor2"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO FOR 3: SUMA DEL 1 AL 100 -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto FOR 3 · Suma del 1 al 100</h3></summary>
+            <div class="exercise__body">
+              <p>Sumar los números del 1 al 100.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>let suma = 0;
+              for (let i = 1; i &lt;= 100; i++) {
+                suma += i;
+              }
+              document.write("La suma es: " + suma);</code></pre>
+              <button type="button" onclick="runSolvedFor3()">Ejecutar código</button>
+              <output id="solvedFor3"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO FOR 4: NÚMEROS PARES -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto FOR 4 · Pares del 2 al 20</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar los números pares desde 2 hasta 20.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>for (let i = 2; i &lt;= 20; i += 2) {
+                document.write(i + "&lt;br&gt;");
+              }</code></pre>
+              <button type="button" onclick="runSolvedFor4()">Ejecutar código</button>
+              <output id="solvedFor4"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO FOR 5: LETRAS DE UNA PALABRA -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto FOR 5 · Letras de una palabra</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar cada letra de JavaScript.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>let palabra = "JavaScript";
+              for (let i = 0; i &lt; palabra.length; i++) {
+                document.write(palabra[i] + "&lt;br&gt;");
+              }</code></pre>
+              <button type="button" onclick="runSolvedFor5()">Ejecutar código</button>
+              <output id="solvedFor5"></output>
+            </div>
+          </details>
+        </div>
+        <h2 id="solved-while-heading" class="exercise-section-title">Ejercicios Resueltos WHILE con Código</h2>
+        <div id="solved-while-list" class="exercise-list">
+
+
+
+          <!-- EJERCICIO RESUELTO WHILE 1: CONTAR DEL 1 AL 10 -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto WHILE 1 · Contar del 1 al 10</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar los números del 1 al 10.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>let i = 1;
+              while (i &lt;= 10) {
+                document.write(i + "&lt;br&gt;");
+                i++;
+              }</code></pre>
+              <button type="button" onclick="runSolvedWhile1()">Ejecutar código</button>
+              <output id="solvedWhile1"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO WHILE 2: TABLA DEL 7 -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto WHILE 2 · Tabla del 7</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar la tabla del 7 del 1 al 10.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>let i = 1;
+              while (i &lt;= 10) {
+                document.write("7 x " + i + " = " + 7 * i + "&lt;br&gt;");
+                i++;
+              }</code></pre>
+              <button type="button" onclick="runSolvedWhile2()">Ejecutar código</button>
+              <output id="solvedWhile2"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO WHILE 3: SUMA HASTA 50 -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto WHILE 3 · Suma hasta 50</h3></summary>
+            <div class="exercise__body">
+              <p>Sumar los números del 1 al 50.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>let suma = 0;
+              let i = 1;
+              while (i &lt;= 50) {
+                suma += i;
+                i++;
+              }
+              document.write("Resultado: " + suma);</code></pre>
+              <button type="button" onclick="runSolvedWhile3()">Ejecutar código</button>
+              <output id="solvedWhile3"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO WHILE 4: NÚMEROS IMPARES -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto WHILE 4 · Impares hasta 20</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar los números impares desde 1 hasta 20.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>let i = 1;
+              while (i &lt;= 20) {
+                document.write(i + "&lt;br&gt;");
+                i += 2;
+              }</code></pre>
+              <button type="button" onclick="runSolvedWhile4()">Ejecutar código</button>
+              <output id="solvedWhile4"></output>
+            </div>
+          </details>
+
+
+
+          <!-- EJERCICIO RESUELTO WHILE 5: CARACTERES DE UN TEXTO -->
+          <details class="exercise">
+            <summary><h3>Ejercicio resuelto WHILE 5 · Caracteres de un texto</h3></summary>
+            <div class="exercise__body">
+              <p>Mostrar cada carácter de HTML5.</p>
+              <p class="section-label"><strong>Resolución</strong></p>
+              <pre><code>let texto = "HTML5";
+              let i = 0;
+              while (i &lt; texto.length) {
+                document.write(texto[i] + "&lt;br&gt;");
+                i++;
+              }</code></pre>
+              <button type="button" onclick="runSolvedWhile5()">Ejecutar código</button>
+              <output id="solvedWhile5"></output>
+            </div>
+          </details>
+        </div>
+        <h2 id="proposed-for-heading" class="exercise-section-title">Ejercicios Propuestos FOR para Desarrollar</h2>
+
+
+
+        <!-- SELECTOR CON LOS DIEZ EJERCICIOS REALIZADOS USANDO FOR -->
+        <details class="exercise exercise--selector">
+          <summary><h2>FOR · Ejercicios 1 al 10</h2></summary>
+          <div class="exercise__body">
+            <div class="selector-grid">
+              <form onsubmit="return runFor(event);">
+                <label>
+                  Ejercicio
+                  <select id="fop" onchange="updateForPrompt()">
+                    <option value="1">1 · Números del 1 al 50</option>
+                    <option value="2">2 · Números del 50 al 1</option>
+                    <option value="3">3 · Suma del 1 al 20</option>
+                    <option value="4">4 · Tabla del 9</option>
+                    <option value="5">5 · Contar pares del 1 al 100</option>
+                    <option value="6">6 · Múltiplos de 3</option>
+                    <option value="7">7 · Letras del nombre</option>
+                    <option value="8">8 · Factorial</option>
+                    <option value="9">9 · Promedio de cinco valores</option>
+                    <option value="10">10 · Contar valores mayores a 10</option>
+                  </select>
+                </label>
+                <p class="exercise-prompt" id="fprompt"></p>
+                <label>
+                  Dato
+                  <input id="finput" value="50" required />
+                </label>
+                <button>Resolver</button>
+                <output id="fout"></output>
+              </form>
+              <div class="code-view">
+                <p class="section-label"><strong>Código JavaScript</strong></p>
+                <pre class="code-view__pre"><code id="fcode"></code></pre>
+              </div>
+            </div>
+          </div>
+        </details>
+
+
+
+        <!-- GENERADOR DE CONTRASEÑA CON REGLAS BASADAS EN EL NOMBRE -->
+        <details class="exercise">
+          <summary><h2>FOR · Password fuerte</h2></summary>
+          <div class="exercise__body">
+            <p>
+              Construir clave: longitud + c si impar/t si par + última letra + $ si vocal/% si consonante + primeras
+              tres letras.
+            </p>
+            <form onsubmit="return password(event);">
+              <label>
+                Nombre
+                <input id="nombre" required />
+              </label>
+              <button>Generar password</button>
+              <output id="rpass"></output>
+            </form>
+            <div class="code-view">
+              <p class="section-label"><strong>Código JavaScript</strong></p>
+              <pre class="code-view__pre"><code>let nombre = "Ana";
+let ultima = nombre.at(-1).toLowerCase();
+let clave =
+  <mark class="hl">nombre.length</mark> +
+  (nombre.length % 2 ? "c" : "t") +
+  ultima +
+  (<mark class="hl">"aeiou".includes(ultima) ? "$" : "%"</mark>) +
+  nombre.slice(0, 3);</code></pre>
+            </div>
+            <p>La clave se forma exactamente concatenando esos cinco componentes.</p>
+          </div>
+        </details>
+
+
+
+        <!-- SUMATORIA DE CUADRADOS, RESULTADO Y PASOS DE RESOLUCIÓN -->
+        <details class="exercise">
+          <summary><h2>FOR · Sumatoria de cuadrados y diagrama</h2></summary>
+          <div class="exercise__body">
+            <p>Calcular 1² + 2² + 3² + … + n².</p>
+            <form onsubmit="return sumCuad(event);">
+              <label>
+                Valor de n
+                <input id="ncuad" type="number" min="1" step="1" value="5" required />
+              </label>
+              <button>Calcular</button>
+              <output id="rcuad"></output>
+            </form>
+            <div class="code-view">
+              <p class="section-label"><strong>Código JavaScript</strong></p>
+              <pre class="code-view__pre"><code>let n = 5, suma = 0;
+for (let i = 1; i &lt;= n; i++) {
+  <mark class="hl">suma += i * i;</mark>
+}</code></pre>
+            </div>
+            <div class="algorithm">
+              <p class="section-label"><strong>Pseudocódigo</strong></p>
+              <pre class="pseudocode"><code>Inicio
+  Leer n
+  suma ← 0
+  Para i ← 1 hasta n
+    suma ← suma + i × i
+  Fin Para
+  Mostrar suma
+Fin</code></pre>
+              <p class="section-label"><strong>Diagrama de flujo</strong></p>
+              <figure class="flowchart">
+                <svg viewBox="0 0 600 520" role="img" aria-labelledby="flujo12-title">
+                  <title id="flujo12-title">Diagrama de flujo de la sumatoria de cuadrados</title>
+                  <defs>
+                    <marker
+                      id="flecha12"
+                      viewBox="0 0 10 10"
+                      refX="9"
+                      refY="5"
+                      markerWidth="7"
+                      markerHeight="7"
+                      orient="auto-start-reverse"
+                    >
+                      <path d="M0,0 L10,5 L0,10 z" fill="#3b4d68"></path>
+                    </marker>
+                  </defs>
+                  <rect class="shape shape--terminal" x="170" y="10" width="120" height="40" rx="20"></rect>
+                  <text x="230" y="30" text-anchor="middle" dominant-baseline="middle">Inicio</text>
+                  <path class="arrow" d="M230,50 V66" marker-end="url(#flecha12)"></path>
+                  <polygon class="shape" points="180,72 300,72 290,112 170,112"></polygon>
+                  <text x="235" y="92" text-anchor="middle" dominant-baseline="middle">Leer n</text>
+                  <path class="arrow" d="M230,112 V130" marker-end="url(#flecha12)"></path>
+                  <rect class="shape" x="130" y="132" width="200" height="42"></rect>
+                  <text x="230" y="153" text-anchor="middle" dominant-baseline="middle">suma ← 0, i ← 1</text>
+                  <path class="arrow" d="M230,174 V180" marker-end="url(#flecha12)"></path>
+                  <polygon class="shape" points="230,180 330,242 230,304 130,242"></polygon>
+                  <text x="230" y="242" text-anchor="middle" dominant-baseline="middle">¿i ≤ n?</text>
+                  <path class="arrow" d="M330,242 H376" marker-end="url(#flecha12)"></path>
+                  <text class="arrow-label" x="352" y="232" text-anchor="middle">Sí</text>
+                  <rect class="shape" x="380" y="200" width="170" height="50"></rect>
+                  <text x="465" y="225" text-anchor="middle" dominant-baseline="middle">suma ← suma + i²</text>
+                  <path class="arrow" d="M465,250 V288" marker-end="url(#flecha12)"></path>
+                  <rect class="shape" x="380" y="290" width="170" height="50"></rect>
+                  <text x="465" y="315" text-anchor="middle" dominant-baseline="middle">i ← i + 1</text>
+                  <path class="arrow" d="M465,340 V400 H570 V264 H298" marker-end="url(#flecha12)"></path>
+                  <path class="arrow" d="M230,304 V372" marker-end="url(#flecha12)"></path>
+                  <text class="arrow-label" x="244" y="336" text-anchor="start">No</text>
+                  <polygon class="shape" points="180,374 300,374 290,416 170,416"></polygon>
+                  <text x="235" y="395" text-anchor="middle" dominant-baseline="middle">Mostrar suma</text>
+                  <path class="arrow" d="M230,416 V466" marker-end="url(#flecha12)"></path>
+                  <rect class="shape shape--terminal" x="170" y="468" width="120" height="40" rx="20"></rect>
+                  <text x="230" y="488" text-anchor="middle" dominant-baseline="middle">Fin</text>
+                </svg>
+                <figcaption>Se repite mientras i ≤ n; el ciclo termina cuando i supera a n.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+
+
+        <!-- PRODUCTO DE LA SERIE Y PASOS DE RESOLUCIÓN -->
+        <details class="exercise">
+          <summary><h2>FOR · Producto de la serie</h2></summary>
+          <div class="exercise__body">
+            <p>Calcular P = 1 × 1/2 × 1/3 × … × 1/n.</p>
+            <form onsubmit="return producto(event);">
+              <label>
+                Último denominador n
+                <input id="nprod" type="number" min="1" step="1" value="5" required />
+              </label>
+              <button>Calcular</button>
+              <output id="rprod"></output>
+            </form>
+            <div class="code-view">
+              <p class="section-label"><strong>Código JavaScript</strong></p>
+              <pre class="code-view__pre"><code>let n = 5, P = 1;
+for (let i = 1; i &lt;= n; i++) {
+  <mark class="hl">P *= 1 / i;</mark>
+}</code></pre>
+            </div>
+            <div class="algorithm">
+              <p class="section-label"><strong>Pseudocódigo</strong></p>
+              <pre class="pseudocode"><code>Inicio
+  Leer n
+  P ← 1
+  Para i ← 1 hasta n
+    P ← P × (1 / i)
+  Fin Para
+  Mostrar P
+Fin</code></pre>
+              <p class="section-label"><strong>Diagrama de flujo</strong></p>
+              <figure class="flowchart">
+                <svg viewBox="0 0 600 520" role="img" aria-labelledby="flujo13-title">
+                  <title id="flujo13-title">Diagrama de flujo del producto de la serie</title>
+                  <defs>
+                    <marker
+                      id="flecha13"
+                      viewBox="0 0 10 10"
+                      refX="9"
+                      refY="5"
+                      markerWidth="7"
+                      markerHeight="7"
+                      orient="auto-start-reverse"
+                    >
+                      <path d="M0,0 L10,5 L0,10 z" fill="#3b4d68"></path>
+                    </marker>
+                  </defs>
+                  <rect class="shape shape--terminal" x="170" y="10" width="120" height="40" rx="20"></rect>
+                  <text x="230" y="30" text-anchor="middle" dominant-baseline="middle">Inicio</text>
+                  <path class="arrow" d="M230,50 V66" marker-end="url(#flecha13)"></path>
+                  <polygon class="shape" points="180,72 300,72 290,112 170,112"></polygon>
+                  <text x="235" y="92" text-anchor="middle" dominant-baseline="middle">Leer n</text>
+                  <path class="arrow" d="M230,112 V130" marker-end="url(#flecha13)"></path>
+                  <rect class="shape" x="130" y="132" width="200" height="42"></rect>
+                  <text x="230" y="153" text-anchor="middle" dominant-baseline="middle">P ← 1, i ← 1</text>
+                  <path class="arrow" d="M230,174 V180" marker-end="url(#flecha13)"></path>
+                  <polygon class="shape" points="230,180 330,242 230,304 130,242"></polygon>
+                  <text x="230" y="242" text-anchor="middle" dominant-baseline="middle">¿i ≤ n?</text>
+                  <path class="arrow" d="M330,242 H376" marker-end="url(#flecha13)"></path>
+                  <text class="arrow-label" x="352" y="232" text-anchor="middle">Sí</text>
+                  <rect class="shape" x="380" y="200" width="170" height="50"></rect>
+                  <text x="465" y="225" text-anchor="middle" dominant-baseline="middle">P ← P × (1 / i)</text>
+                  <path class="arrow" d="M465,250 V288" marker-end="url(#flecha13)"></path>
+                  <rect class="shape" x="380" y="290" width="170" height="50"></rect>
+                  <text x="465" y="315" text-anchor="middle" dominant-baseline="middle">i ← i + 1</text>
+                  <path class="arrow" d="M465,340 V400 H570 V264 H298" marker-end="url(#flecha13)"></path>
+                  <path class="arrow" d="M230,304 V372" marker-end="url(#flecha13)"></path>
+                  <text class="arrow-label" x="244" y="336" text-anchor="start">No</text>
+                  <polygon class="shape" points="180,374 300,374 290,416 170,416"></polygon>
+                  <text x="235" y="395" text-anchor="middle" dominant-baseline="middle">Mostrar P</text>
+                  <path class="arrow" d="M230,416 V466" marker-end="url(#flecha13)"></path>
+                  <rect class="shape shape--terminal" x="170" y="468" width="120" height="40" rx="20"></rect>
+                  <text x="230" y="488" text-anchor="middle" dominant-baseline="middle">Fin</text>
+                </svg>
+                <figcaption>Se repite mientras i ≤ n; el ciclo termina cuando i supera a n.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+
+
+        <!-- CLASIFICACIÓN DE EDADES POR ESPECIE DEL ZOOLÓGICO -->
+        <details class="exercise">
+          <summary><h2>FOR · Muestra de edades del zoológico</h2></summary>
+          <div class="exercise__body">
+            <p>
+              Elefantes: 20 muestras; jirafas: 15; chimpancés: 40. Categorías: 0–1 año, más de 1 y menos de 3, y 3 años
+              o más.
+            </p>
+            <form onsubmit="return zoologico(event);">
+              <label>
+                Especie
+                <select id="especie">
+                  <option value="elefantes">Elefantes (20)</option>
+                  <option value="jirafas">Jirafas (15)</option>
+                  <option value="chimpances">Chimpancés (40)</option>
+                </select>
+              </label>
+              <label>
+                Edades en años, separadas por coma
+                <input id="edades" placeholder="0.5, 1, 2.4, 3" required />
+              </label>
+              <button>Calcular porcentajes</button>
+              <output id="rzoo"></output>
+            </form>
+            <div class="code-view">
+              <p class="section-label"><strong>Código JavaScript</strong></p>
+              <pre class="code-view__pre"><code>for (let i = 0; i &lt; edades.length; i++) {
+  if (<mark class="hl">edades[i] &lt;= 1</mark>) c1++;
+  else if (<mark class="hl">edades[i] &lt; 3</mark>) c2++;
+  else c3++;
+}
+// porcentaje = conteo / muestra * 100</code></pre>
+            </div>
+            <p>
+              Resolución: contar cada categoría recorriendo la muestra; porcentaje = conteo ÷ tamaño de muestra × 100.
+            </p>
+          </div>
+        </details>
+
+
+
+        <!-- SELECTOR CON LOS DIEZ EJERCICIOS REALIZADOS USANDO WHILE -->
+        <h2 id="proposed-while-heading" class="exercise-section-title">Ejercicios propuestos WHILE para Desarrollar</h2>
+        <details class="exercise exercise--selector">
+          <summary><h2>WHILE · Ejercicios 1 al 10</h2></summary>
+          <div class="exercise__body">
+            <p>
+              <b>1.</b>
+              Mostrar 1 a 30.
+              <b>2.</b>
+              Mostrar pares hasta 40.
+              <b>3.</b>
+              Sumar consecutivos hasta alcanzar 100.
+              <b>4.</b>
+              Tabla del 6.
+              <b>5.</b>
+              Contar letras.
+              <b>6.</b>
+              Sumar 10 números.
+              <b>7.</b>
+              Mostrar de −1 a −10.
+              <b>8.</b>
+              Repetir mensaje cinco veces.
+              <b>9.</b>
+              Contar entradas hasta 0 (sin contar el 0).
+              <b>10.</b>
+              Promediar notas de 0 a 20 hasta -1.
+            </p>
+            <div class="selector-grid">
+              <form onsubmit="return runWhile(event);">
+                <label>
+                  Ejercicio
+                  <select id="wop" onchange="updateWhilePrompt()">
+                    <option value="1">1 · Números del 1 al 30</option>
+                    <option value="2">2 · Pares hasta 40</option>
+                    <option value="3">3 · Sumar hasta llegar a 100</option>
+                    <option value="4">4 · Tabla del 6</option>
+                    <option value="5">5 · Contar letras</option>
+                    <option value="6">6 · Sumar diez números</option>
+                    <option value="7">7 · Negativos hasta −10</option>
+                    <option value="8">8 · Repetir mensaje cinco veces</option>
+                    <option value="9">9 · Contar hasta escribir 0</option>
+                    <option value="10">10 · Promedio de notas</option>
+                  </select>
+                </label>
+                <p class="exercise-prompt" id="wprompt"></p>
+                <label>
+                  Dato
+                  <input id="winput" value="30" />
+                </label>
+                <button>Resolver</button>
+                <output id="wout"></output>
+              </form>
+              <div class="code-view">
+                <p class="section-label"><strong>Código JavaScript</strong></p>
+                <pre class="code-view__pre"><code id="wcode"></code></pre>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </main>
+
+
+
+    <!-- PIE DE PÁGINA INSTITUCIONAL -->
+    <footer>Derechos Reservados ITeMH @ Universidad Privada de Trujillo</footer>
+
+
+
+    <!-- COMIENZA SCRIPT -->
+    <script>
+
+
+
+      // FUNCIONES CORTAS PARA LOCALIZAR ELEMENTOS Y LEER SU VALOR.
+      const $ = (id) => document.getElementById(id),
+        val = (id) => $(id).value;
+
+
+
+      // EJERCICIO RESUELTO FOR 1: EJECUTA EL CICLO Y MUESTRA LOS NÚMEROS DEL 1 AL 10.
+      function runSolvedFor1() {
+        const numbers = [];
+        for (let i = 1; i <= 10; i++) numbers.push(i);
+        $("solvedFor1").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO RESUELTO FOR 2: EJECUTA LA TABLA DEL 5.
+      function runSolvedFor2() {
+        const rows = [];
+        for (let i = 1; i <= 10; i++) rows.push(`5 x ${i} = ${5 * i}`);
+        $("solvedFor2").innerHTML = rows.join("<br>");
+      }
+
+
+
+      // EJERCICIO RESUELTO FOR 3: EJECUTA LA SUMA DEL 1 AL 100.
+      function runSolvedFor3() {
+        let suma = 0;
+        for (let i = 1; i <= 100; i++) suma += i;
+        $("solvedFor3").textContent = "La suma es: " + suma;
+      }
+
+
+
+      // EJERCICIO RESUELTO FOR 4: EJECUTA LA LISTA DE NÚMEROS PARES.
+      function runSolvedFor4() {
+        const numbers = [];
+        for (let i = 2; i <= 20; i += 2) numbers.push(i);
+        $("solvedFor4").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO RESUELTO FOR 5: EJECUTA EL RECORRIDO DE LETRAS.
+      function runSolvedFor5() {
+        const letters = [];
+        const word = "JavaScript";
+        for (let i = 0; i < word.length; i++) letters.push(word[i]);
+        $("solvedFor5").textContent = letters.join(" · ");
+      }
+
+
+
+      // EJERCICIO RESUELTO WHILE 1: EJECUTA EL CONTEO DEL 1 AL 10.
+      function runSolvedWhile1() {
+        const numbers = [];
+        let i = 1;
+        while (i <= 10) numbers.push(i++);
+        $("solvedWhile1").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO RESUELTO WHILE 2: EJECUTA LA TABLA DEL 7.
+      function runSolvedWhile2() {
+        const rows = [];
+        let i = 1;
+        while (i <= 10) {
+          rows.push(`7 x ${i} = ${7 * i}`);
+          i++;
+        }
+        $("solvedWhile2").innerHTML = rows.join("<br>");
+      }
+
+
+
+      // EJERCICIO RESUELTO WHILE 3: EJECUTA LA SUMA DEL 1 AL 50.
+      function runSolvedWhile3() {
+        let suma = 0,
+          i = 1;
+        while (i <= 50) {
+          suma += i;
+          i++;
+        }
+        $("solvedWhile3").textContent = "Resultado: " + suma;
+      }
+
+
+
+      // EJERCICIO RESUELTO WHILE 4: EJECUTA LA LISTA DE IMPARES.
+      function runSolvedWhile4() {
+        const numbers = [];
+        let i = 1;
+        while (i <= 20) {
+          numbers.push(i);
+          i += 2;
+        }
+        $("solvedWhile4").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO RESUELTO WHILE 5: EJECUTA EL RECORRIDO DEL TEXTO.
+      function runSolvedWhile5() {
+        const characters = [];
+        const text = "HTML5";
+        let i = 0;
+        while (i < text.length) characters.push(text[i++]);
+        $("solvedWhile5").textContent = characters.join(" · ");
+      }
+
+
+
+      // AGREGA TÍTULOS DE ENUNCIADO Y RESOLUCIÓN A CADA EJERCICIO.
+
+
+
+      // PREPARA LOS TÍTULOS DE LAS SECCIONES DE SELECCIÓN FOR Y WHILE.
+      document.querySelectorAll(".exercise:not(.exercise--selector) .exercise__body").forEach((body) => {
+        if (body.querySelector(":scope > .section-label")) return;
+        const nodes = [...body.children],
+          statement = nodes.find((n) => n.matches("p"));
+        if (!statement) return;
+        const rest = nodes.filter((n) => n !== statement),
+          form = rest.find((n) => n.matches("form")),
+          explanation = rest.filter((n) => n.matches("p"));
+        const en = document.createElement("p");
+        en.className = "section-label";
+        en.innerHTML = "<strong>Enunciado</strong>";
+        const re = document.createElement("p");
+        re.className = "section-label";
+        re.innerHTML = "<strong>Resolución</strong>";
+        body.replaceChildren(en, statement);
+        if (explanation.length) {
+          body.append(re, ...explanation);
+        } else body.append(re);
+        if (form) body.append(form);
+        rest.filter((n) => !n.matches("p,form")).forEach((n) => body.append(n));
+      });
+
+
+
+      // COLOCA CADA CONSIGNA JUNTO AL SELECTOR CORRESPONDIENTE.
+      document.querySelectorAll(".exercise--selector .exercise__body form").forEach((form) => {
+        const en = document.createElement("p");
+        en.className = "section-label";
+        en.innerHTML = "<strong>Enunciado</strong>";
+        const re = document.createElement("p");
+        re.className = "section-label";
+        re.innerHTML = "<strong>Resolución</strong>";
+        (form.closest(".selector-grid") || form).before(en);
+        form.querySelector("button").before(re);
+      });
+      document
+        .querySelectorAll("#fprompt,#wprompt")
+        .forEach((prompt) => prompt.closest("form").querySelector("label").before(prompt));
+
+
+
+      // RECORRE LOS EJERCICIOS PROPUESTOS PARA RENOMBRAR SUS TÍTULOS.
+      const exerciseList = document.querySelector("main > .exercise-list");
+      const proposedExercises = [...exerciseList.children].filter((item) => item.matches("details.exercise"));
+
+
+
+      // MUESTRA LOS PROPUESTOS DEBAJO DE UN TÍTULO, SIN ACORDEÓN CONTENEDOR.
+      proposedExercises.forEach((exercise, index) => {
+        const title = exercise.querySelector("summary h2");
+        const labels = [
+          "Ejercicios 1 al 10",
+          "Ejercicio 11 · Password fuerte",
+          "Ejercicio 12 · Sumatoria de cuadrados",
+          "Ejercicio 13 · Producto de la serie",
+          "Ejercicio 14 · Edades del zoológico",
+          "Ejercicios 1 al 10",
+        ];
+        const loopType = index === 5 ? "WHILE" : "FOR";
+        title.textContent = `${loopType} · ${labels[index]}`;
+      });
+
+
+
+      // CONSIGNAS QUE SE MUESTRAN AL ELEGIR CADA EJERCICIO FOR.
+      const forPrompts = [
+        "Mostrar los números del 1 al 50.",
+        "Mostrar los números del 50 al 1.",
+        "Calcular la suma de los números del 1 al 20.",
+        "Mostrar la tabla de multiplicar del 9.",
+        "Contar cuántos números pares hay entre 1 y 100.",
+        "Mostrar los múltiplos de 3 hasta 30.",
+        "Ingresar un nombre y mostrar cada letra.",
+        "Ingresar un entero y calcular su factorial.",
+        "Ingresar cinco números y calcular su promedio.",
+        "Ingresar cinco números y contar cuántos son mayores a 10.",
+      ];
+
+
+
+      // CONSIGNAS QUE SE MUESTRAN AL ELEGIR CADA EJERCICIO WHILE.
+      const whilePrompts = [
+        "Mostrar los números del 1 al 30.",
+        "Mostrar los números pares hasta 40.",
+        "Sumar números consecutivos hasta que la suma llegue al menos a 100.",
+        "Mostrar la tabla del 6.",
+        "Ingresar una palabra y contar sus letras.",
+        "Ingresar exactamente 10 números y calcular su suma.",
+        "Mostrar los números negativos desde −1 hasta −10.",
+        "Ingresar un mensaje y repetirlo cinco veces.",
+        "Ingresar números hasta el centinela 0 y contar los anteriores.",
+        "Ingresar notas de 0 a 20 hasta -1 y calcular el promedio.",
+      ];
+
+
+
+      // CÓDIGO DE CADA EJERCICIO FOR. LA PARTE CLAVE SE RESALTA CON <mark class="hl">.
+      const forCodes = [
+        `for (let i = 1; <mark class="hl">i &lt;= 50</mark>; i++) {
+  document.write(i + "&lt;br&gt;");
+}`,
+        `for (let i = 50; <mark class="hl">i &gt;= 1</mark>; i--) {
+  document.write(i + "&lt;br&gt;");
+}`,
+        `let suma = 0;
+for (let i = 1; i &lt;= 20; i++) {
+  <mark class="hl">suma += i;</mark>
+}
+document.write("La suma es: " + suma);`,
+        `for (let i = 1; i &lt;= 10; i++) {
+  document.write("9 x " + i + " = " + <mark class="hl">9 * i</mark> + "&lt;br&gt;");
+}`,
+        `let pares = 0;
+for (let i = 1; i &lt;= 100; i++) {
+  if (<mark class="hl">i % 2 === 0</mark>) pares++;
+}
+document.write("Pares: " + pares);`,
+        `for (let i = 3; i &lt;= 30; <mark class="hl">i += 3</mark>) {
+  document.write(i + "&lt;br&gt;");
+}`,
+        `let nombre = "Ana";
+for (let i = 0; i &lt; <mark class="hl">nombre.length</mark>; i++) {
+  document.write(<mark class="hl">nombre[i]</mark> + "&lt;br&gt;");
+}`,
+        `let n = 5, factorial = 1;
+for (let i = 2; i &lt;= n; i++) {
+  <mark class="hl">factorial *= i;</mark>
+}
+document.write(n + "! = " + factorial);`,
+        `let notas = [10, 12, 14, 16, 18], suma = 0;
+for (let i = 0; i &lt; 5; i++) {
+  suma += notas[i];
+}
+document.write(<mark class="hl">"Promedio: " + suma / 5</mark>);`,
+        `let numeros = [5, 12, 8, 20, 11], mayores = 0;
+for (let i = 0; i &lt; numeros.length; i++) {
+  if (<mark class="hl">numeros[i] &gt; 10</mark>) mayores++;
+}
+document.write("Mayores a 10: " + mayores);`,
+      ];
+
+
+
+      // CÓDIGO DE CADA EJERCICIO WHILE. LA PARTE CLAVE SE RESALTA CON <mark class="hl">.
+      const whileCodes = [
+        `let i = 1;
+while (<mark class="hl">i &lt;= 30</mark>) {
+  document.write(i + "&lt;br&gt;");
+  i++;
+}`,
+        `let i = 2;
+while (i &lt;= 40) {
+  document.write(i + "&lt;br&gt;");
+  <mark class="hl">i += 2;</mark>
+}`,
+        `let suma = 0, i = 1;
+while (<mark class="hl">suma &lt; 100</mark>) {
+  suma += i;
+  i++;
+}
+document.write("Suma: " + suma);`,
+        `let i = 1;
+while (i &lt;= 10) {
+  document.write("6 x " + i + " = " + <mark class="hl">6 * i</mark> + "&lt;br&gt;");
+  i++;
+}`,
+        `let palabra = "Hola", i = 0;
+while (<mark class="hl">i &lt; palabra.length</mark>) {
+  i++;
+}
+document.write("Letras: " + i);`,
+        `let datos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let i = 0, suma = 0;
+while (<mark class="hl">i &lt; 10</mark>) {
+  suma += datos[i];
+  i++;
+}
+document.write("Suma: " + suma);`,
+        `let i = -1;
+while (<mark class="hl">i &gt;= -10</mark>) {
+  document.write(i + "&lt;br&gt;");
+  <mark class="hl">i--;</mark>
+}`,
+        `let i = 0;
+while (<mark class="hl">i &lt; 5</mark>) {
+  document.write("Hola&lt;br&gt;");
+  i++;
+}`,
+        `let datos = [4, 7, 2, 0, 9], i = 0;
+while (<mark class="hl">datos[i] !== 0</mark>) {
+  i++;
+}
+document.write("Antes del 0: " + i);`,
+        `let notas = [12, 15, 18, -1], i = 0, suma = 0;
+while (<mark class="hl">notas[i] !== -1</mark>) {
+  suma += notas[i];
+  i++;
+}
+document.write("Promedio: " + suma / i);`,
+      ];
+
+
+
+      // ACTUALIZA LA CONSIGNA Y EL DATO DE EJEMPLO DEL SELECTOR FOR.
+      function updateForPrompt() {
+        let i = +$("fop").value - 1;
+        $("fprompt").textContent = forPrompts[i];
+        $("fcode").innerHTML = forCodes[i];
+        $("finput").value =
+          i === 0
+            ? "50"
+            : i === 1
+              ? "50"
+              : i === 6
+                ? "Ana"
+                : i === 7
+                  ? "5"
+                  : i === 8
+                    ? "10, 12, 14, 16, 18"
+                    : i === 9
+                      ? "5, 12, 8, 20, 11"
+                      : "5";
+      }
+
+
+
+      // ACTUALIZA LA CONSIGNA Y EL DATO DE EJEMPLO DEL SELECTOR WHILE.
+      function updateWhilePrompt() {
+        let i = +$("wop").value - 1;
+        $("wprompt").textContent = whilePrompts[i];
+        $("wcode").innerHTML = whileCodes[i];
+        $("winput").value = ["30", "40", "100", "6", "", "1,2,3,4,5,6,7,8,9,10", "", "Hola", "4,7,2,0", "12,15,18,-1"][
+          i
+        ];
+      }
+
+
+
+      // MUESTRA LA INFORMACIÓN INICIAL AL CARGAR LA PÁGINA.
+      updateForPrompt();
+      updateWhilePrompt();
+
+
+
+      // EJERCICIO FOR 1: MUESTRA LOS NÚMEROS DESDE 1 HASTA EL LÍMITE INGRESADO.
+      function runFor1() {
+        const limit = Number(val("finput")) || 50;
+        const numbers = [];
+        for (let i = 1; i <= limit; i++) numbers.push(i);
+        $("fout").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO FOR 2: CUENTA DESDE EL LÍMITE INGRESADO HASTA 1.
+      function runFor2() {
+        const limit = Number(val("finput")) || 50;
+        const numbers = [];
+        for (let i = limit; i >= 1; i--) numbers.push(i);
+        $("fout").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO FOR 3: CALCULA LA SUMA DE 1 A 20.
+      function runFor3() {
+        let sum = 0;
+        for (let i = 1; i <= 20; i++) sum += i;
+        $("fout").textContent = "Suma = " + sum;
+      }
+
+
+
+      // EJERCICIO FOR 4: MUESTRA LA TABLA DEL 9.
+      function runFor4() {
+        const rows = [];
+        for (let i = 1; i <= 10; i++) rows.push(`9 × ${i} = ${9 * i}`);
+        $("fout").textContent = rows.join(" · ");
+      }
+
+
+
+      // EJERCICIO FOR 5: CUENTA LOS NÚMEROS PARES DEL 1 AL 100.
+      function runFor5() {
+        let count = 0;
+        for (let i = 1; i <= 100; i++) if (i % 2 === 0) count++;
+        $("fout").textContent = "Cantidad de pares = " + count;
+      }
+
+
+
+      // EJERCICIO FOR 6: MUESTRA LOS MÚLTIPLOS DE 3 HASTA 30.
+      function runFor6() {
+        const multiples = [];
+        for (let i = 3; i <= 30; i += 3) multiples.push(i);
+        $("fout").textContent = multiples.join(", ");
+      }
+
+
+
+      // EJERCICIO FOR 7: MUESTRA LAS LETRAS DEL NOMBRE INGRESADO.
+      function runFor7() {
+        const text = val("finput").trim(),
+          letters = [];
+        for (let i = 0; i < text.length; i++) letters.push(text[i]);
+        $("fout").textContent = letters.join(" · ");
+      }
+
+
+
+      // EJERCICIO FOR 8: CALCULA EL FACTORIAL DEL NÚMERO INGRESADO.
+      function runFor8() {
+        const number = Number(val("finput"));
+        if (!Number.isInteger(number) || number < 0 || number > 170) {
+          $("fout").textContent = "Ingrese entero entre 0 y 170.";
+          return;
+        }
+        let factorial = 1;
+        for (let i = 2; i <= number; i++) factorial *= i;
+        $("fout").textContent = `${number}! = ${factorial}`;
+      }
+
+
+
+      // EJERCICIO FOR 9: CALCULA EL PROMEDIO DE CINCO NÚMEROS.
+      function runFor9() {
+        const numbers = val("finput")
+          .split(/[\s,;]+/)
+          .filter(Boolean)
+          .map(Number);
+        if (numbers.length !== 5 || numbers.some((number) => !Number.isFinite(number))) {
+          $("fout").textContent = "Ingrese exactamente cinco números separados por coma.";
+          return;
+        }
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+        $("fout").textContent = "Promedio = " + sum / numbers.length;
+      }
+
+
+
+      // EJERCICIO FOR 10: CUENTA LOS VALORES MAYORES QUE 10.
+      function runFor10() {
+        const numbers = val("finput")
+          .split(/[\s,;]+/)
+          .filter(Boolean)
+          .map(Number);
+        if (numbers.length !== 5 || numbers.some((number) => !Number.isFinite(number))) {
+          $("fout").textContent = "Ingrese exactamente cinco números separados por coma.";
+          return;
+        }
+        let count = 0;
+        for (const number of numbers) if (number > 10) count++;
+        $("fout").textContent = "Mayores que 10 = " + count;
+      }
+
+
+
+      // DESPACHA EL FORMULARIO FOR A LA FUNCIÓN DEL EJERCICIO SELECCIONADO.
+      function runFor(e) {
+        e.preventDefault();
+        const exercises = [runFor1, runFor2, runFor3, runFor4, runFor5, runFor6, runFor7, runFor8, runFor9, runFor10];
+        exercises[Number(val("fop")) - 1]?.();
+        return false;
+      }
+
+
+
+      // GENERA UNA CONTRASEÑA APLICANDO LAS REGLAS DEL EJERCICIO.
+      function password(e) {
+        e.preventDefault();
+        let n = val("nombre").trim();
+        if (!n) {
+          $("rpass").textContent = "Ingrese un nombre.";
+          return false;
+        }
+        let first = n.slice(0, 3),
+          last = n.at(-1),
+          vowel = "aeiouáéíóú".includes(last.toLowerCase());
+        $("rpass").textContent = `Password: ${n.length}${n.length % 2 ? "c" : "t"}${last}${vowel ? "$" : "%"}${first}`;
+        return false;
+      }
+
+
+
+      // CALCULA LA SUMA DE LOS CUADRADOS DESDE 1 HASTA N.
+      function sumCuad(e) {
+        e.preventDefault();
+        let n = +$("ncuad").value,
+          s = 0;
+        for (let i = 1; i <= n; i++) s += i * i;
+        $("rcuad").textContent = `La sumatoria hasta ${n} es ${s}`;
+        return false;
+      }
+
+
+
+      // CALCULA EL PRODUCTO DE LOS INVERSOS DESDE 1 HASTA N.
+      function producto(e) {
+        e.preventDefault();
+        let n = +$("nprod").value,
+          p = 1;
+        for (let i = 1; i <= n; i++) p *= 1 / i;
+        $("rprod").textContent = `P = ${p} (≈ ${p.toExponential(6)})`;
+        return false;
+      }
+
+
+
+      // VALIDA Y CLASIFICA LAS EDADES DE UNA MUESTRA DE ANIMALES.
+      function zoologico(e) {
+        e.preventDefault();
+        let n = { elefantes: 20, jirafas: 15, chimpances: 40 }[val("especie")],
+          xs = val("edades")
+            .split(/[\s,;]+/)
+            .filter(Boolean)
+            .map(Number);
+        if (xs.length !== n || xs.some((x) => !Number.isFinite(x) || x < 0)) {
+          $("rzoo").textContent = `Ingrese exactamente ${n} edades válidas.`;
+          return false;
+        }
+        let c = [0, 0, 0];
+        for (let x of xs) {
+          if (x <= 1) c[0]++;
+          else if (x < 3) c[1]++;
+          else c[2]++;
+        }
+        $("rzoo").textContent =
+          `0–1 año: ${c[0]} (${((c[0] / n) * 100).toFixed(1)}%) · >1 y <3: ${c[1]} (${((c[1] / n) * 100).toFixed(1)}%) · 3 o más: ${c[2]} (${((c[2] / n) * 100).toFixed(1)}%)`;
+        return false;
+      }
+
+
+
+      // EJERCICIO WHILE 1: MUESTRA LOS NÚMEROS DEL 1 AL 30.
+      function runWhile1() {
+        const numbers = [];
+        let i = 1;
+        while (i <= 30) numbers.push(i++);
+        $("wout").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO WHILE 2: MUESTRA LOS NÚMEROS PARES HASTA 40.
+      function runWhile2() {
+        const numbers = [];
+        let i = 2;
+        while (i <= 40) {
+          numbers.push(i);
+          i += 2;
+        }
+        $("wout").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO WHILE 3: SUMA NÚMEROS CONSECUTIVOS HASTA LLEGAR A 100.
+      function runWhile3() {
+        let sum = 0,
+          i = 1;
+        while (sum < 100) sum += i++;
+        $("wout").textContent = `Suma=${sum}; último número=${i - 1}`;
+      }
+
+
+
+      // EJERCICIO WHILE 4: MUESTRA LA TABLA DEL 6.
+      function runWhile4() {
+        const rows = [];
+        let i = 1;
+        while (i <= 10) {
+          rows.push(`6×${i}=${6 * i}`);
+          i++;
+        }
+        $("wout").textContent = rows.join(" · ");
+      }
+
+
+
+      // EJERCICIO WHILE 5: CUENTA LAS LETRAS INGRESADAS.
+      function runWhile5() {
+        const text = val("winput").trim();
+        let count = 0;
+        while (count < text.length) count++;
+        $("wout").textContent = "Cantidad de caracteres = " + count;
+      }
+
+
+
+      // EJERCICIO WHILE 6: SUMA DIEZ NÚMEROS INGRESADOS.
+      function runWhile6() {
+        const numbers = val("winput")
+          .split(/[\s,;]+/)
+          .filter(Boolean)
+          .map(Number);
+        if (numbers.length !== 10 || numbers.some((number) => !Number.isFinite(number))) {
+          $("wout").textContent = "Ingrese exactamente 10 números válidos.";
+          return;
+        }
+        let i = 0,
+          sum = 0;
+        while (i < 10) sum += numbers[i++];
+        $("wout").textContent = "Suma = " + sum;
+      }
+
+
+
+      // EJERCICIO WHILE 7: MUESTRA LOS NÚMEROS NEGATIVOS HASTA -10.
+      function runWhile7() {
+        const numbers = [];
+        let i = -1;
+        while (i >= -10) numbers.push(i--);
+        $("wout").textContent = numbers.join(", ");
+      }
+
+
+
+      // EJERCICIO WHILE 8: REPITE CINCO VECES EL MENSAJE INGRESADO.
+      function runWhile8() {
+        const messages = [];
+        let i = 0;
+        while (i < 5) {
+          messages.push(val("winput").trim());
+          i++;
+        }
+        $("wout").textContent = messages.join(" · ");
+      }
+
+
+
+      // EJERCICIO WHILE 9: CUENTA LOS NÚMEROS HASTA ENCONTRAR EL CERO.
+      function runWhile9() {
+        const numbers = val("winput")
+          .split(/[\s,;]+/)
+          .filter(Boolean)
+          .map(Number);
+        if (numbers.some((number) => !Number.isFinite(number))) {
+          $("wout").textContent = "Entrada inválida";
+          return;
+        }
+        let i = 0;
+        while (i < numbers.length && numbers[i] !== 0) i++;
+        $("wout").textContent =
+          "Cantidad antes del cero = " + i + (i === numbers.length ? " (no se encontró el 0)" : "");
+      }
+
+
+
+      // EJERCICIO WHILE 10: CALCULA EL PROMEDIO DE NOTAS HASTA EL CENTINELA -1.
+      function runWhile10() {
+        const grades = val("winput")
+          .split(/[\s,;]+/)
+          .filter(Boolean)
+          .map(Number);
+        if (grades.some((grade) => !Number.isFinite(grade))) {
+          $("wout").textContent = "Entrada inválida";
+          return;
+        }
+        let i = 0,
+          sum = 0,
+          count = 0;
+        while (i < grades.length && grades[i] !== -1) {
+          if (grades[i] < 0 || grades[i] > 20) {
+            $("wout").textContent = "Nota inválida (use 0 a 20).";
+            return;
+          }
+          sum += grades[i++];
+          count++;
+        }
+        $("wout").textContent = count ? "Promedio = " + (sum / count).toFixed(2) : "No se ingresaron notas";
+      }
+
+
+
+      // DESPACHA EL FORMULARIO WHILE A LA FUNCIÓN DEL EJERCICIO SELECCIONADO.
+      function runWhile(e) {
+        e.preventDefault();
+        const exercises = [
+          runWhile1,
+          runWhile2,
+          runWhile3,
+          runWhile4,
+          runWhile5,
+          runWhile6,
+          runWhile7,
+          runWhile8,
+          runWhile9,
+          runWhile10,
+        ];
+        exercises[Number(val("wop")) - 1]?.();
+        return false;
+      }
+    </script>
+
+
+
+    <!-- FINALIZA SCRIPT -->
+  </body>
+</html>
